@@ -1,7 +1,16 @@
 .App {
   text-align: center;
 }
+.App-product{
+  border:2px solid blue;
+  padding:10px;
+  margin:auto;
+  border-radius: 5px;
+  background-color:#D7D0CF;
+  max-width: 50%;
+  justify-content: center;
 
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +44,9 @@
   to {
     transform: rotate(360deg);
   }
+}
+.myLogin{
+  border:2px solid blue;
+  padding: 10px;
+  margin:10px;
 }
