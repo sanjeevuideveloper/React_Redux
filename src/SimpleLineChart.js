@@ -1,13 +1,12 @@
 import React from "react";
 import {
-  BarChart,
-  Bar,
+  LineChart,
+  Line,
   XAxis,
   YAxis,
   CartesianGrid,
   Tooltip,
-  Legend,
-  LabelList
+  Legend
 } from "recharts";
 
 const data = [
@@ -55,11 +54,11 @@ const data = [
   }
 ];
 
-export default function SimplBarChart() {
+export default function SimpleLineChart() {
   return (
-    <div>
-    <h3>SimpleBarChart</h3>
-    <BarChart
+     <div>
+      <h3>SimpleLineChart</h3>
+    <LineChart
       width={500}
       height={300}
       data={data}
@@ -75,13 +74,10 @@ export default function SimplBarChart() {
       <YAxis />
       <Tooltip />
       <Legend />
-       <Bar dataKey="uv" fill="#82ca9d" />
-       <Bar dataKey="pv" fill="#8884d8" />
-       <Bar dataKey="amt" fill="#D62A29">
-          {/*<LabelList position="left" />*/}
-       </Bar>
-       
-    </BarChart>
+      <Line type="monotone" dataKey="uv" stroke="#82ca9d" activeDot={{ r: 10 }}/>
+      <Line type="monotone" dataKey="pv"stroke="#8884d8"/>
+      <Line type="monotone" dataKey="amt" stroke="#D62A29" />
+    </LineChart>
     </div>
   );
 }

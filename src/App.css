@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  
 }
 .App-product{
   border:2px solid blue;
@@ -45,8 +46,7 @@
     transform: rotate(360deg);
   }
 }
-.myLogin{
-  border:2px solid blue;
-  padding: 10px;
-  margin:10px;
+.recharts-wrapper{
+  margin-left: 30%;
 }
+
