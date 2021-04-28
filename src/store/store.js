@@ -1,4 +1,5 @@
 import {createStore} from 'redux';
-import CountReducer from '../reducers/CountReducer';
-const store=createStore(CountReducer);
+
+import TodoReducer from '../reducers/TodoReducer';
+const store=createStore(TodoReducer);
 export default store;
