@@ -55,7 +55,7 @@ function TodoReducer(state=initialState, action){
                       console.log('postingTime',postingTime);
                       console.log('currentTime',currentTime);
                       console.log('time',time);
-                      if(time == 5){
+                      if(time >= 5){
                         return false;
                       }
                       else{
