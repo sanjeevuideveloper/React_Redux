@@ -57,7 +57,7 @@ const data = [
 export default function SimpleLineChart() {
   return (
      <div>
-      <h3>SimpleLineChart</h3>
+      <h1>SimpleLineChart</h1>
     <LineChart
       width={500}
       height={300}

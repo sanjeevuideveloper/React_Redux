@@ -15,6 +15,7 @@ function ReduxCounter(){
 	}
 	return(
       <div>
+      	<h1>Redux Counter</h1>
       	count={count}<br/>
       	<button onClick={increase}>increase</button>
       	<button onClick={decrease}>decrease</button>

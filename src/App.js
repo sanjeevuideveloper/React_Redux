@@ -1,8 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
-// import ReduxCounter from './ReduxCounter';
-// import SimpleBarChart from './SimpleBarChart';
-// import SimpleLineChart from './SimpleLineChart';
+import ReduxCounter from './ReduxCounter';
+import SimpleBarChart from './SimpleBarChart';
+import SimpleLineChart from './SimpleLineChart';
 import TodoContainer from './todo app/TodoContainer';
 import ForumContainer from './forum app/ForumContainer';
 
@@ -20,9 +20,9 @@ function App() {
     <div className="App">
     <TodoContainer/>
     <ForumContainer/>
-      {/*<ReduxCounter/>
+      <ReduxCounter/>
       <SimpleBarChart/>
-      <SimpleLineChart/>*/}
+      <SimpleLineChart/>
 
     </div>
   );

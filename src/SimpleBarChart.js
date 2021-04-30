@@ -58,7 +58,7 @@ const data = [
 export default function SimplBarChart() {
   return (
     <div>
-    <h3>SimpleBarChart</h3>
+    <h1>SimpleBarChart</h1>
     <BarChart
       width={500}
       height={300}
