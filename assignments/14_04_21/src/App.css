@@ -1,6 +1,5 @@
 .App {
   text-align: center;
-  
 }
 .App-product{
   border:2px solid blue;
@@ -46,44 +45,8 @@
     transform: rotate(360deg);
   }
 }
-.box{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap
+.myLogin{
+  border:2px solid blue;
+  padding: 10px;
+  margin:10px;
 }
-.material-icons{
-    font-size: 2.4em;
-    cursor: pointer;
-}
-.card{
-    width: 300px;
-}
-.card .card-image .card-title{
-    color: black;
-    font-weight: 400
-}
-.cart{
-    margin-top:40px;
-}
-.collection .collection-item{
-    display: flex;
-}
-.collection-item.avatar .title {
-    font-size: 20px;
-    font-weight: 500;
-    color: #ee6e73;
-    display: block;
-    margin-bottom: 20px;
-    
-}
-.collection .collection-item img{
-    width: 150px;
-    margin-right: 25px;
-}
-.item-desc{
-    align-self:center;
-}
-
-
-
-
