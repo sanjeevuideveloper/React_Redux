@@ -5,8 +5,8 @@ import { differenceInCalendarDays } from 'date-fns';
 function SimpleCalender() {
   const [value, setValue] = useState(new Date());
    const [tomorrow,setT] = useState(new Date().setDate(new Date().getDate()+1));
-    const [in3days,setIn3] = useState(new Date().setDate(new Date().getDate()+3))
-     const [in5days,setIn5] = useState(new Date().setDate(new Date().getDate()+5))
+    const [in3days,setIn3] = useState(new Date().setDate(new Date().getDate()+2))
+     const [in5days,setIn5] = useState(new Date().setDate(new Date().getDate()+4))
 
   
   
@@ -30,9 +30,9 @@ function isSameDay(a, b) {
     let dat3=new Date(nextValue);
     dat1.setDate(dat1.getDate()+1);
     setT(dat1);
-     dat2.setDate(dat2.getDate()+3);
+     dat2.setDate(dat2.getDate()+2);
      setIn3(dat2);
-     dat3.setDate(dat3.getDate()+5);
+     dat3.setDate(dat3.getDate()+4);
      setIn5(dat3);
   // in3days.setDate(value.getDate()+3);
   // in5days.setDate(value.getDate()+5);
