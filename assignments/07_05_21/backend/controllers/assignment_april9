@@ -1,0 +1,35 @@
+1)Create a Ecommerce API.
+you need to have 1 collection.
+Products: should have name,price, avaialability(available/not available)
+you need to create 4 end points
+post url localhost:3000/product will create product. 
+get url localhost:3000/product -- show all products as json
+delete url localhost:3000/product/id
+localhost/product/id -->send json for only that product.
+edit url:localhost/product/id -->send json response that product is modified.
+
+findbyproduct url
+GET localhost/productsearch/:name --> show pprduct by name
+
+also create new urls to find product by availability.
+
+find product higher than a price
+GET localhost/productsearch/:price
+if price is greater than price send, show all products in json
+ 
+2) create a user api.
+fields are username,name,dob,password
+you need to create 4 end points
+post url localhost:3000/user will create user. 
+get url localhost:3000/user -- show all users as json
+delete url localhost:3000/user/id
+localhost/user/id -->send json for only that user.
+put request to modify user.
+
+
+make 4 urls to find by username, name,dob and password
+ex
+localhost/dobsearch/:dob
+
+
+
