@@ -14,7 +14,7 @@ function Login(){
   } = useForm();
   const password = watch("password");
   	const history= useHistory();
-	const doLogin=(e)=>{
+	const doLogin=(data,e)=>{
 		e.preventDefault();
 		
 		let userOb={email:e.target.email.value, password:e.target.password.value}
@@ -46,7 +46,7 @@ function Login(){
              <h3>id is {userDetails.id}</h3>
           </div>
       }
-		<form onSubmit={doLogin}>
+		<form onSubmit={handleSubmit(doLogin)}>
       		
       		<input type="email" placeholder="email" {...register("email", {required:{
   						value:true,

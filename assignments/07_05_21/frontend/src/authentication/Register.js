@@ -13,7 +13,7 @@ function Register(){
   } = useForm();
   const password = watch("password");
   	const history= useHistory();
-	const doRegister=(e)=>{
+	const doRegister=(data, e)=>{
 		e.preventDefault();
 	
 		let userOb={username:e.target.username.value, email:e.target.email.value, password:e.target.password.value}
@@ -31,7 +31,7 @@ function Register(){
 	return(
 		<div className="auth">
 		<h1>Register</h1>
-		<form onSubmit={doRegister}>
+		<form onSubmit={handleSubmit(doRegister)}>
       		<input type="text" placeholder="username" {...register('username',{ required: {
   						value:true,
   						message:'username is required' }  
